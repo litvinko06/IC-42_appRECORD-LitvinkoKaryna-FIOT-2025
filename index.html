@@ -2,118 +2,93 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Звітні HTML — IC-42 Litvinko Karyna</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <title>Звіти лабораторних робіт — IC-42 Litvinko Karyna</title>
     <style>
-      :root {
-        --accent: #ff7a00;
-      }
       body {
-        margin: 0;
-        background: #fff7ef;
-        color: #222;
-        font-family: Montserrat, system-ui, Arial, sans-serif;
-      }
-      .container {
-        width: min(1100px, 92%);
-        margin-inline: auto;
-      }
-      header {
-        padding: 24px 0;
-        text-align: center;
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background: #fdfdfd;
       }
       h1 {
-        margin: 0;
-        font-weight: 800;
-      }
-      .meta {
-        color: #666;
-        margin-top: 6px;
+        text-align: center;
+        color: darkblue;
       }
       nav {
-        display: flex;
-        gap: 12px;
-        justify-content: center;
-        margin: 16px 0 24px;
-        flex-wrap: wrap;
+        text-align: center;
+        margin: 20px 0;
       }
       nav a {
-        padding: 10px 14px;
-        border-radius: 999px;
-        background: #fff;
-        border: 1px solid #eee;
+        margin: 0 10px;
         text-decoration: none;
-        color: #222;
-        font-weight: 600;
+        color: darkblue;
+        font-weight: bold;
       }
       nav a:hover {
-        border-color: var(--accent);
-        color: var(--accent);
+        color: orange;
       }
-      .panel {
+      section {
+        margin: 30px 0;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
         background: #fff;
-        border: 1px solid #eee;
-        border-radius: 14px;
-        padding: 18px;
-        margin: 12px 0;
       }
       h2 {
-        margin: 0 0 10px;
-      }
-      ul {
-        margin: 0;
-        padding-left: 18px;
+        color: #333;
       }
       footer {
-        padding: 20px 0;
         text-align: center;
-        color: #666;
+        margin-top: 40px;
+        font-size: 14px;
+        color: #555;
       }
     </style>
   </head>
   <body>
-    <header class="container">
-      <h1>Звітні HTML-документи лабораторних</h1>
-      <div class="meta">IC-42 — Litvinko Karyna • 2025</div>
-      <nav>
-        <a href="#lr1">ЛР №1</a><a href="#lr2">ЛР №2</a> <a href="#lr3">ЛР №3</a
-        ><a href="#lr4">ЛР №4</a>
-      </nav>
-    </header>
-    <main class="container">
-      <section id="lr1" class="panel">
-        <h2>Лабораторна робота №1</h2>
-        <ul>
-          <li>Тема, мета.</li>
-          <li>Скріншоти застосунку.</li>
-          <li>Фрагменти коду (HTML/CSS/JS) з поясненнями.</li>
-          <li>Посилання на репозиторій і Pages.</li>
-        </ul>
-      </section>
-      <section id="lr2" class="panel">
-        <h2>Лабораторна робота №2</h2>
-        <p>Додай матеріали.</p>
-      </section>
-      <section id="lr3" class="panel">
-        <h2>Лабораторна робота №3</h2>
-        <p>Додай матеріали.</p>
-      </section>
-      <section id="lr4" class="panel">
-        <h2>Лабораторна робота №4</h2>
-        <p>Додай матеріали.</p>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; <span id="y"></span> IC-42 — Litvinko Karyna</p>
-    </footer>
-    <script>
-      document.getElementById("y").textContent = new Date().getFullYear();
-    </script>
+    <h1>Звітні HTML-документи лабораторних робіт</h1>
+    <p style="text-align: center">
+      <b>Студентка:</b> Litvinko Karyna, група IC-42
+    </p>
+
+    <nav>
+      <a href="#lr1">ЛР №1</a>
+      <a href="#lr2">ЛР №2</a>
+      <a href="#lr3">ЛР №3</a>
+      <a href="#lr4">ЛР №4</a>
+    </nav>
+
+    <section id="lr1">
+      <h2>Лабораторна робота №1</h2>
+      <p><b>Тема:</b> Структура HTML-документа</p>
+      <p>
+        <b>Мета:</b> Ознайомлення з базовими тегами HTML та створенням простої
+        веб-сторінки.
+      </p>
+      <p><b>Скріншоти роботи:</b> (сюди вставиш картинки)</p>
+      <p><b>Фрагменти коду:</b></p>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;title&gt;Приклад&lt;/title&gt;&lt;/head&gt;
+  &lt;body&gt;Привіт!&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    </section>
+
+    <section id="lr2">
+      <h2>Лабораторна робота №2</h2>
+      <p>Тут буде опис другої роботи.</p>
+    </section>
+
+    <section id="lr3">
+      <h2>Лабораторна робота №3</h2>
+      <p>Тут буде опис третьої роботи.</p>
+    </section>
+
+    <section id="lr4">
+      <h2>Лабораторна робота №4</h2>
+      <p>Тут буде опис четвертої роботи.</p>
+    </section>
+
+    <footer>© 2025 Litvinko Karyna, IC-42</footer>
   </body>
 </html>
